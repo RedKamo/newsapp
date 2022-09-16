@@ -1,5 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@400;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Almarai:wght@400;700;800&display=swap");
 
-*{
-  font-family: 'Almarai', sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Almarai", sans-serif;
+}
+
+body {
+  background-color: #f3f3f3;
 }
