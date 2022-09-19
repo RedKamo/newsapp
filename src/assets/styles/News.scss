@@ -1,3 +1,5 @@
+$breakpoint-tablet: 768px;
+
 .container {
   border-left: 2px solid #353535;
   border-right: 2px solid #353535;
@@ -93,14 +95,16 @@
     align-items: center;
     padding-left: 0.4rem;
 
-    p {
+    a {
       border-left: 1px solid #000;
       display: flex;
       align-items: center;
       justify-items: center;
       padding: 0.5rem;
+      text-decoration: none;
+      color: #000;
     }
-    p:hover {
+    a:hover {
       background-color: #f2d56f;
       cursor: pointer;
     }
@@ -137,24 +141,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    align-items: center;
     background: white;
     outline: 2px solid #353535;
     box-shadow: 0 2px 3px 0px rgba(0, 0, 0, 0.25);
     transition: 0.1s all;
-    //padding: 0.4rem;
     margin: 0.4rem 0;
-
-    p {
-      max-width: 80%;
-
-      span {
-        margin-right: 0.5rem;
-        padding: 0 0.5rem;
-        font-weight: bold;
-        border-right: 1px solid #000;
-      }
-    }
   }
 
   img {
@@ -179,6 +170,19 @@
       font-size: 14px;
     }
   }
+
+  &__description {
+    display: flex;
+    align-items: center;
+    max-width: 80%;
+
+    span {
+      margin-right: 0.5rem;
+      padding: 0 0.5rem;
+      font-weight: bold;
+      border-right: 1px solid #000;
+    }
+  }
 }
 
 .table:hover .table__info {
@@ -187,10 +191,6 @@
   transform: scale(0.98);
   box-shadow: none;
   cursor: pointer;
-
-  span {
-    //color: #f0ff8a;
-  }
 }
 
 .table:hover .table__info:hover {
@@ -206,3 +206,11 @@
 // GRAY: C5C5C5
 // BLACK: 090822
 //
+
+@media (max-width: $breakpoint-tablet) {
+  .table {
+    &__author {
+      display: none;
+    }
+  }
+}

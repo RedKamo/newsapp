@@ -1,11 +1,11 @@
 //import News from "./components/news";
-import Test from "./components/Test";
 import "./App.scss";
+import News from "./components/News";
 
 const App = () => {
   return (
     <main className="general">
-      <Test />
+      <News />
     </main>
   );
 };
